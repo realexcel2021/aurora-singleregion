@@ -113,11 +113,3 @@ resource "aws_kms_key" "primary" {
   policy = data.aws_iam_policy_document.rds.json
 
 }
-
-resource "aws_kms_key" "secondary" {
-  provider = aws.region2
-
-  policy = data.aws_iam_policy_document.rds.json
-
-
-}

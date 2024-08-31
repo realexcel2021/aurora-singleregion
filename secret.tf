@@ -27,7 +27,8 @@ resource "aws_secretsmanager_secret_version" "example" {
     "engine": "postgres", 
     "port": 5432, 
     "host": "${local.endpoint}", 
-    "username": "${var.database_username_master}"
+    "username": "${var.database_username_master}",
+    "password": "${random_password.master.result}"
     }
   EOF
 }

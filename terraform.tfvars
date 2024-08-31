@@ -15,3 +15,5 @@ region1 = "us-east-1"
 region2 = "us-east-2"
 
 database_username_master = "t360"
+
+private_subnet_ids = [ "" ]
